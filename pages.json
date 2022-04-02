@@ -1,0 +1,54 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/main/main"
+		},{
+			"path": "pages/discover/discover"
+		},{
+			"path": "pages/me/me",
+			"style": {
+				"transparentTitle": "auto"
+			}
+		},{
+			"path" : "pages/article-detail/article-detail"
+		},{
+			"path" : "pages/search/search",
+			"style": {
+				"transparentTitle": "always"
+			}
+		}
+        ,{
+            "path" : "pages/xiaoji/xiaoji",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "my-one",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "rgb(252, 252, 252)"
+	},
+	"tabBar": {
+		"color": "rgb(180, 180, 180)",
+		"selectedColor": "rgb(51, 51, 51)",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/main/main",
+				"text": "首页",
+				"iconPath": "./static/tabBar/main.png",
+				"selectedIconPath": "static/tabBar/main_a.png"
+			},{
+				"pagePath": "pages/discover/discover",
+				"text": "发现",
+				"iconPath": "static/tabBar/discover.png",
+				"selectedIconPath": "static/tabBar/discover_a.png"
+			},{
+				"pagePath": "pages/me/me",
+				"text": "我的",
+				"iconPath": "static/tabBar/me.png",
+				"selectedIconPath": "static/tabBar/me_a.png"
+			}
+		]
+	}
+}
